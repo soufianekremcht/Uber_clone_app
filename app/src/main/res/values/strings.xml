@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UberClone</string>
+    <string name="title_activity_driver_map">Map</string>
+    <string name="title_activity_customer_map">Map</string>
+    <string name="firebase_db_driver_available">DriversAvailable</string>
+    <string name="firebase_db_drivers_working_field">DriversWorking</string>
+    <string name="uber_x">Uber X</string>
+    <string name="uber_black">Uber Black</string>
+    <string name="uber_truck">Uber Truck</string>
+    <string name="destination_confirm">Confirm</string>
+    <string name="toast_check_destination_request_uber">Choose Destination First before Request</string>
+    <string name="open_drawer">open_drawer</string>
+    <string name="close_drawer">close drawer</string>
+    <string name="short_name_error">The Name is too short , you should type at least 3 characters</string>
+</resources>

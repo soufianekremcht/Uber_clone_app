@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/customer_map_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/customer_map_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            map:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <Button
+                android:id="@+id/customer_request_uber_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Make a Uber Request"/>
+
+            <fragment
+                android:id="@+id/customer_map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".activities.CustomerMapActivity" />
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/customer_map_location_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:src="@drawable/ic_my_location_white_24dp"
+            map:layout_anchorGravity="top|end"
+            map:layout_anchor="@id/bottom_sheet"
+            android:layout_margin="16dp"/>
+
+
+        <include layout="@layout/bottom_sheet_request_uber"
+            android:id="@+id/bottom_sheet"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/customer_map_nav_view"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        map:headerLayout="@layout/drawer_nav_header"
+        map:menu="@menu/drawer_menu"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/app_brand_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/main_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UBER"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/main_app_sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUST A CLONE"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <Button
+            android:id="@+id/sign_up_page_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Sign UP"
+            style="@style/LoginSignUpButtonStyle"/>
+        <Button
+            android:id="@+id/login_page_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Login"
+            style="@style/LoginSignUpButtonStyle"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LoginSignUpButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:colorButtonNormal">@color/accent_red</item>
+    </style>
+</resources>

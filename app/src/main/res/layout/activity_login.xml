@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/login_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Adress"
+        android:inputType="textEmailAddress"
+        style="@style/LoginSignUpEditTextStyle"/>
+    <EditText
+        android:id="@+id/login_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:drawableRight="@drawable/ic_lock_open_black_24dp"
+        style="@style/LoginSignUpEditTextStyle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot your password ?"
+        android:layout_margin="8dp"/>
+
+
+    <RadioGroup
+        android:id="@+id/login_user_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/login_costumer_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costumer"
+            android:checked="true"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/login_driver_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/user_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        style="@style/LoginSignUpButtonStyle"/>
+</LinearLayout>

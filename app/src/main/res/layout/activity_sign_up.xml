@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/sign_up_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/sign_up_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/sign_up_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"/>
+    <EditText
+        android:id="@+id/sign_up_user_password_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repeat Password"/>
+
+
+    <RadioGroup
+        android:id="@+id/sign_up_user_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/sign_up_costumer_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costumer"
+            android:checked="true"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/sign_up_driver_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/user_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        style="@style/LoginSignUpButtonStyle"/>
+
+
+</LinearLayout>

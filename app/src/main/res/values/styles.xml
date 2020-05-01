@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <!-- Login\SignUp Themes. -->
+    <style name="LoginSignUpButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:colorBackground">@color/accent_red</item>
+    </style>
+    <style name="LoginSignUpEditTextStyle">
+        <item name="android:background">@drawable/login_edit_text_round</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+
+    <!-- Map layout Themes. -->
+    <style name="RequestUberButtonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:background">@color/accent_blue</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+
+    </style>
+
+
+    <!-- Profile Layout Styles -->
+
+    <style name="ProfileTextViewStyleWhite">
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/accent_white</item>
+    </style>
+    <style name="ProfileTextViewStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/accent_black</item>
+    </style>
+    <style name="ProfileTextTitleStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ProfileIconBtnStyle">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+
+</resources>
