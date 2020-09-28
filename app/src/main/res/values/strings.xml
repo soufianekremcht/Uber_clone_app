@@ -12,4 +12,8 @@
     <string name="open_drawer">open_drawer</string>
     <string name="close_drawer">close drawer</string>
     <string name="short_name_error">The Name is too short , you should type at least 3 characters</string>
+    <string name="customers">Customers</string>
+    <string name="drivers">Drivers</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="required_for_this_app">Required For The App To Run</string>
 </resources>

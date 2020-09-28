@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,7 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/accent_red">
+        android:background="@color/accent_yellow">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/customer_profile_toolbar"
             android:layout_width="match_parent"
@@ -26,14 +25,14 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:gravity="center_horizontal"
-                android:background="@color/accent_red">
+                android:background="@color/accent_yellow">
                 <ImageView
                     android:id="@+id/customer_profile_image_view"
                     android:layout_width="100dp"
@@ -44,15 +43,16 @@
                     android:id="@+id/customer_profile_name_field"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/accent_white"
+                    android:hint="Your Name : "
+                    android:inputType="textPersonName"
                     style="@style/ProfileTextTitleStyle"/>
                 <EditText
                     android:id="@+id/customer_profile_phone_field"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="062443242"
+                    android:hint="Phone Number ..."
                     android:inputType="phone"
-                    android:textColor="@color/accent_white"
                     style="@style/ProfileTextViewStyle"/>
                 <LinearLayout
                     android:id="@+id/profile_status_layout"
@@ -69,14 +69,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Trips"
-                            style="@style/ProfileTextViewStyleWhite"
+                            style="@style/ProfileTextViewStyle"
                             android:textSize="15sp"/>
                         <TextView
                             android:id="@+id/trips_count_num"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="12000"
-                            style="@style/ProfileTextViewStyleWhite"
+                            style="@style/ProfileTextViewStyle"
                             android:layout_below="@id/trips_count_text"
                             />
 
@@ -90,14 +90,14 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Trips"
-                            style="@style/ProfileTextViewStyleWhite"/>
+                            style="@style/ProfileTextViewStyle"/>
                         <TextView
                             android:id="@+id/stars_count_num"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="12000"
                             android:layout_below="@id/stars_count_text"
-                            style="@style/ProfileTextViewStyleWhite"
+                            style="@style/ProfileTextViewStyle"
                             />
 
                     </RelativeLayout>
@@ -110,177 +110,166 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Trips"
-                            style="@style/ProfileTextViewStyleWhite"/>
+                            style="@style/ProfileTextViewStyle"/>
                         <TextView
                             android:id="@+id/years_count_num"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="12000"
                             android:layout_below="@id/years_count_text"
-                            style="@style/ProfileTextViewStyleWhite"
+                            style="@style/ProfileTextViewStyle"
                             />
 
                     </RelativeLayout>
                 </LinearLayout>
 
             </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:id="@+id/profile_skills_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_open_black_24dp"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Knows English and French"
+                    android:layout_toEndOf="@id/profile_skills_icon"
+                    style="@style/ProfileTextViewStyle" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    style="@style/ProfileIconBtnStyle"
+                    />
 
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/profile_description_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Give a description"
+                    android:layout_toEndOf="@id/profile_description_icon"
+                    style="@style/ProfileTextViewStyle" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    style="@style/ProfileIconBtnStyle"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/profile_location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="from Morrocco"
+                    android:layout_toEndOf="@id/profile_location_icon"
+                    style="@style/ProfileTextViewStyle" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    style="@style/ProfileIconBtnStyle"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:id="@+id/profile_questions_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_open_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ask about ....."
+                    android:layout_toEndOf="@id/profile_questions_icon"
+                    style="@style/ProfileTextViewStyle"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_open_black_24dp"
+                    android:layout_alignParentEnd="true"
+                    style="@style/ProfileIconBtnStyle"
+                    />
+
+            </RelativeLayout>
             <LinearLayout
+                android:id="@+id/profile_fun_fact_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/profile_fun_fact_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fun Facts"
+                    style="@style/ProfileTextTitleStyle"/>
+                <TextView
+                    android:id="@+id/profile_fun_fact_content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12000"
+                    style="@style/ProfileTextViewStyle"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/profile_favorite_uber_story_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <RelativeLayout
+
+                <TextView
+                    android:id="@+id/profile_uber_story_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    >
-                    <ImageView
-                        android:id="@+id/profile_skills_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_lock_open_black_24dp"
-                        android:padding="10dp"
-                        />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Knows English and French"
-                        android:layout_toEndOf="@id/profile_skills_icon"
-                        style="@style/ProfileTextViewStyle" />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_edit_black_24dp"
-                        android:layout_alignParentEnd="true"
-                        style="@style/ProfileIconBtnStyle"
-                        />
-
-                </RelativeLayout>
-                <RelativeLayout
+                    style="@style/ProfileTextTitleStyle"
+                    android:text="Title"/>
+                <TextView
+                    android:id="@+id/profile_uber_story_content"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-                    <ImageView
-                        android:id="@+id/profile_description_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_person_black_24dp"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Give a description"
-                        android:layout_toEndOf="@id/profile_description_icon"
-                        style="@style/ProfileTextViewStyle" />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_add_black_24dp"
-                        android:layout_alignParentEnd="true"
-                        style="@style/ProfileIconBtnStyle"
-                        />
+                    android:text="Random words"
+                    style="@style/ProfileTextViewStyle"
+                    />
 
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-                    <ImageView
-                        android:id="@+id/profile_location_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_location_black_24dp"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="from Morroco"
-                        android:layout_toEndOf="@id/profile_location_icon"
-                        style="@style/ProfileTextViewStyle" />
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_edit_black_24dp"
-                        android:layout_alignParentEnd="true"
-                        style="@style/ProfileIconBtnStyle"
-                        />
-
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical">
-                    <ImageView
-                        android:id="@+id/profile_questions_icon"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_lock_open_black_24dp"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ask about ....."
-                        android:layout_toEndOf="@id/profile_questions_icon"
-                        style="@style/ProfileTextViewStyle"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_lock_open_black_24dp"
-                        android:layout_alignParentEnd="true"
-                        style="@style/ProfileIconBtnStyle"
-                        />
-
-                </RelativeLayout>
-                <LinearLayout
-                    android:id="@+id/profile_fun_fact_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="5dp">
-                    <TextView
-                        android:id="@+id/profile_fun_fact_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Fun Facts"
-                        style="@style/ProfileTextTitleStyle"/>
-                    <TextView
-                        android:id="@+id/profile_fun_fact_content_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="12000"
-                        android:layout_below="@id/trips_count_text"
-                        style="@style/ProfileTextViewStyle"
-                        />
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/profile_favorite_uber_story_layout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/profile_uber_story_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="@style/ProfileTextTitleStyle"
-                        android:text="Title"/>
-                    <TextView
-                        android:id="@+id/profile_uber_story_content"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Random words"
-                        style="@style/ProfileTextViewStyle"
-                        />
-
-                </LinearLayout>
             </LinearLayout>
-
         </LinearLayout>
-
-
-
     </ScrollView>
 
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProfileTextViewStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/accent_black</item>
+    </style>
+    <style name="ProfileTextTitleStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ProfileIconBtnStyle">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+</resources>

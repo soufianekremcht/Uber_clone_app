@@ -5,7 +5,7 @@
 
     <item android:id="@+id/driver_map_menu_is_working"
         android:title="Is Working"
-        android:actionLayout="@layout/switch_item"
+        android:actionLayout="@layout/toolbar_switch_item"
         app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
         app:showAsAction="always"/>
 
