@@ -51,14 +51,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="Sign UP"
-            style="@style/LoginSignUpButtonStyle"/>
+            style="@style/style_login_btn"/>
         <Button
             android:id="@+id/login_page_btn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="Login"
-            style="@style/LoginSignUpButtonStyle"/>
+            style="@style/style_login_btn"/>
 
     </LinearLayout>
 

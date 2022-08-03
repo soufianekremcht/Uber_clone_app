@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,26 +12,47 @@
         android:src="@mipmap/ic_launcher"
         android:layout_margin="10dp"
         />
-    <EditText
-        android:id="@+id/login_user_email"
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email Adress"
-        android:inputType="textEmailAddress"
-        style="@style/LoginSignUpEditTextStyle"/>
-    <EditText
-        android:id="@+id/login_user_password"
+        android:hint="Email"
+        app:hintAnimationEnabled="true"
+        android:autofillHints="Email"
+        style="@style/style_login_text_input">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_user_email_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
         android:hint="Password"
-        android:drawableRight="@drawable/ic_lock_open_black_24dp"
-        style="@style/LoginSignUpEditTextStyle"/>
-    <TextView
+        app:hintAnimationEnabled="true"
+        android:autofillHints="Password"
+        style="@style/style_login_text_input">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_user_password_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:lines="1"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_forget_password_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot your password ?"
-        android:layout_margin="8dp"/>
+        android:layout_margin="8dp"
+
+        />
 
 
     <RadioGroup
@@ -56,5 +78,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Log In"
-        style="@style/LoginSignUpButtonStyle"/>
+        style="@style/style_login_btn"/>
 </LinearLayout>

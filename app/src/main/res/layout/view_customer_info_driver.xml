@@ -11,7 +11,7 @@
         android:id="@+id/customer_img_driver"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ic_tag_faces_blue_24dp"
+        android:src="@drawable/ic_account_circle_black_24dp"
         />
     <TextView
         android:id="@+id/customer_info_name_driver"

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/accent_white"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:id="@+id/btmsheet_request_uber_layout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Uber Options"
+            android:layout_margin="5dp"
+            android:padding="5dp"/>
+        <RadioGroup
+            android:id="@+id/bs_request_uber_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <RadioButton
+                android:id="@+id/bs_uber_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uber_x"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/bs_uber_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uber_black"/>
+            <RadioButton
+                android:id="@+id/bs_uber_truck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uber_truck"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/bs_request_uber_choose_destination_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Destination"
+            style="@style/style_request_uber_btn"/>
+        <Button
+            android:id="@+id/bs_request_uber_cancel_destination_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel Destination"
+            style="@style/style_request_uber_btn"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/bs_request_uber_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Uber"
+            style="@style/style_request_uber_btn"/>
+
+    </LinearLayout>
+</merge>

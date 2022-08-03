@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "241802158568",
-    "firebase_url": "https://uberclonex-ed601.firebaseio.com",
-    "project_id": "uberclonex-ed601",
-    "storage_bucket": "uberclonex-ed601.appspot.com"
+    "project_number": "520397773609",
+    "project_id": "uquick-app",
+    "storage_bucket": "uquick-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:241802158568:android:5281034014e7bf1efd445d",
+        "mobilesdk_app_id": "1:520397773609:android:b837548cac1dca14b33538",
         "android_client_info": {
-          "package_name": "com.soufianekre.uberclone"
+          "package_name": "com.soufianekre.uquick"
         }
       },
       "oauth_client": [
         {
-          "client_id": "241802158568-udacrk05ft7ng1076i42of24kg83vla1.apps.googleusercontent.com",
+          "client_id": "520397773609-4sv14k8ied99s6iq2ps44mlik527b2ke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soufianekre.uquick",
+            "certificate_hash": "9d5d195b0efed44c79436376e727ee10416907ab"
+          }
+        },
+        {
+          "client_id": "520397773609-0mhesblns292fa3ss82lbvngj5kv128v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA-TanQRVVYm9Lt3NSqjZzguaiHadQOTX8"
+          "current_key": "AIzaSyCmF96igmI35CTYjvzO2QRiial7Q8I8PWY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "241802158568-udacrk05ft7ng1076i42of24kg83vla1.apps.googleusercontent.com",
+              "client_id": "520397773609-0mhesblns292fa3ss82lbvngj5kv128v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

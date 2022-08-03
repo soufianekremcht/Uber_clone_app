@@ -9,7 +9,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/accent_yellow">
+        android:background="@color/accent_red">
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/driver_profile_toolbar"
             android:layout_width="match_parent"
@@ -31,12 +31,12 @@
                 android:orientation="vertical"
                 android:padding="10dp"
                 android:gravity="center_horizontal"
-                android:background="@color/accent_yellow">
-                <ImageView
-                    android:id="@+id/driver_profile_image_view"
+                android:background="@color/accent_red">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/driver_profile_img"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/ic_tag_faces_blue_24dp"
+                    android:padding="@dimen/spacing_small"
                     />
                 <EditText
                     android:id="@+id/driver_profile_name_field"

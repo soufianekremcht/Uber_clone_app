@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">UberClone</string>
+    <string name="app_name">UQuick</string>
     <string name="title_activity_driver_map">Map</string>
     <string name="title_activity_customer_map">Map</string>
     <string name="firebase_db_driver_available">DriversAvailable</string>
@@ -16,4 +16,6 @@
     <string name="drivers">Drivers</string>
     <string name="enable_gps">Enable GPS</string>
     <string name="required_for_this_app">Required For The App To Run</string>
+    <string name="navigation_drawer_open">Open Nav</string>
+    <string name="navigation_drawer_close">Close</string>
 </resources>
